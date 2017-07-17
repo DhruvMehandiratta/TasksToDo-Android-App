@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_brown">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/edit_task_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/dark_brown"
+            ></android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?actionBarSize">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/edit_title"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:id="@+id/edit_description"
+        android:layout_below="@+id/edit_title"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_description"
+        android:id="@+id/edit_date"
+        android:text="Date"
+        android:background="?android:attr/selectableItemBackground"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_description"
+        android:layout_toRightOf="@+id/edit_date"
+        android:text="Time"
+        android:id="@+id/edit_time"
+        android:background="?android:attr/selectableItemBackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_date"
+        android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Repeat"
+        android:id="@+id/edit_repeat_checkbox"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerEdit"
+        android:visibility="invisible">
+
+    </Spinner>
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit_doneFAB"
+        android:layout_width = "wrap_content"
+        app:theme="@style/MyActionBar"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="bottom|end"
+        android:src = "@drawable/ic_done_white_24dp"
+        app:backgroundTint="@color/dark_brown"
+        android:layout_alignParentRight = "true"/>
+</android.support.design.widget.CoordinatorLayout>

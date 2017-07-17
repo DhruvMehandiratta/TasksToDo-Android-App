@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_green">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/display_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/dark_green"
+            ></android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?actionBarSize"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:id="@+id/display_title"
+        android:text="Title"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:id="@+id/display_description"
+        android:textSize="25dp"
+        android:layout_below="@+id/display_title"
+        android:text="Description"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="date"
+        android:gravity="center"
+        android:layout_below="@+id/display_description"
+        android:id="@+id/display_date"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="time"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/display_time"
+        android:layout_toRightOf="@+id/display_date"
+        android:layout_below="@+id/display_description"/>
+</RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editTaskFAB"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/dark_green"
+        android:src = "@drawable/ic_border_color_white_24dp"
+        android:layout_alignParentRight = "true"
+        />
+</android.support.design.widget.CoordinatorLayout>

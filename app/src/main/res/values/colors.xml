@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orange">#FF8C00</color>
+    <color name="lightOrange">#FFD090</color>
+    <color name = "background_green">#81c784</color>
+    <color name = "my_green">#43a047</color>
+    <color name = "dark_green">#1b5e20</color>
+    <color name = "background_red">#ef9a9a</color>
+    <color name = "my_red">#f44336</color>
+    <color name = "dark_red">#b71c1c</color>
+    <color name = "background_brown">#bcaaa4</color>
+    <color name = "my_brown">#795548</color>
+    <color name = "dark_brown">#3e2723</color>
+    <color name = "final_background">#e0f7fa</color>
+    <color name = "final_card">#b2ebf2</color>
+    <color name = "final_dark">#1e88e5</color>
+
+
+</resources>

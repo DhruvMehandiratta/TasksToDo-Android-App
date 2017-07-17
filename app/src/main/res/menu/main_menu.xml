@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Simple List" android:id="@+id/c1"></item>
+    <item android:title="Grid C2" android:id="@+id/c2" />
+    <item android:title="Grid C3" android:id="@+id/c3"/>
+</menu>
